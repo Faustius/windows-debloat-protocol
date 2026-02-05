@@ -27,6 +27,14 @@ We take a conservative, "Business-First" approach. We do NOT remove the Calculat
 * **System Restore Point:** The script automatically creates a Restore Point named `Monadic_Pre_Debloat` before making changes.
 * **Error Handling:** If an app isn't found, the script skips it silently without crashing.
 
+## ↩️ How to Undo (Reversal)
+Need to bring the bloat back? We included a reversal script.
+
+1.  Download `restore.ps1`.
+2.  Run as **Administrator**.
+3.  **What it does:** It flips the registry keys back to default and attempts to re-register all built-in Windows apps.
+4.  **The Failsafe:** If the script doesn't restore a specific app you need, use **System Restore**. The `debloat.ps1` script automatically created a restore point named `Monadic_Pre_Debloat` before it touched anything.
+
 ## 🤝 Contributing
 Found a new piece of bloatware included in the latest Windows update? Submit a Pull Request to add it to the `$BloatwareList`.
 
